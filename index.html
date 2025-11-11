@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html style="background-color: #1a8cff; overflow: hidden;" id="html">
+
+<head>
+    <title>
+        &#127922 Bonk: Risk It to Strike It!
+    </title>
+</head>
+<style>
+    .startpage {
+        width: 101%;
+        height: 101%;
+        background-color: red;
+        z-index: 3;
+        position: fixed;
+        top: -1%;
+        left: -1%;
+        background-color: #1a8cff;
+        display: none;
+        animation: startpagemove 2s;
+        animation-play-state: paused;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes startpagemove {
+        0% {
+            opacity: 100%;
+            display: inline-block;
+        }
+
+        100% {
+            opacity: 0%;
+            display: none;
+        }
+    }
+
+    .startpageB1 {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 5px 5px 3px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .startpageB1:hover {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 2px 2px 1px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .startpageB2 {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 35%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 5px 5px 3px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .startpageB2:hover {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 35%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 2px 2px 1px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .startpageB3 {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 50%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 5px 5px 3px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .startpageB3:hover {
+        width: 25%;
+        height: 10%;
+        position: fixed;
+        top: 50%;
+        left: 10%;
+        border: 2px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 2px 2px 1px black;
+        background-color: #ffd091;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+
+    .BonkStyle {
+        position: fixed;
+        width: 10%;
+        height: 20%;
+        border: 2px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 36px;
+        font-family: Verdana;
+        box-shadow: 7px 7px 4px black;
+        z-index: 2;
+        background-color: #ffd091;
+    }
+
+    .BonkStyle:hover {
+        position: fixed;
+        width: 10%;
+        height: 20%;
+        border: 2px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 36px;
+        font-family: Verdana;
+        box-shadow: 3px 3px 1.5px black;
+        transition: 0s;
+        z-index: 2;
+        background-color: #ffd091;
+    }
+
+    .BONK {
+        z-index: 0;
+        font-size: 300px;
+        font-family: Verdana;
+        opacity: 0.7;
+        position: fixed;
+        top: -14%;
+        left: 22%;
+    }
+
+    .BONK2 {
+        z-index: 0;
+        font-size: 300px;
+        font-family: Verdana;
+        opacity: 0.7;
+        position: fixed;
+        top: -28%;
+        left: 40%;
+    }
+
+    .ResetBonk {
+        position: fixed;
+        top: 1.5%;
+        left: 2%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk:hover {
+        position: fixed;
+        top: 1.5%;
+        left: 2%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk2 {
+        position: fixed;
+        top: 1.5%;
+        left: 8%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk2:hover {
+        position: fixed;
+        top: 1.5%;
+        left: 8%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk3 {
+        position: fixed;
+        top: 1.5%;
+        right: 2%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk3:hover {
+        position: fixed;
+        top: 1.5%;
+        right: 2%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk4 {
+        position: fixed;
+        top: 1.5%;
+        right: 10%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBonk4:hover {
+        position: fixed;
+        top: 1.5%;
+        right: 10%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .Boysbuttons {
+        cursor: pointer;
+        position: fixed;
+        font-family: Verdana;
+        font-size: 26px;
+        width: 14%;
+        border: 2px solid black;
+        border-radius: 14px;
+        box-shadow: 5px 5px 3px black;
+        background-color: #ffd091;
+    }
+
+    .Boysbuttons:hover {
+        cursor: pointer;
+        position: fixed;
+        font-family: Verdana;
+        font-size: 26px;
+        width: 14%;
+        border: 2px solid black;
+        border-radius: 14px;
+        box-shadow: 2px 2px 1px black;
+        background-color: #ffd091;
+    }
+
+    .boyspoints {
+        position: fixed;
+        top: 87%;
+        left: 3%;
+        border: 2px solid black;
+        border-radius: 14px;
+        width: 14%;
+        resize: none;
+        text-align: center;
+        padding-top: 0.5%;
+        font-family: Verdana;
+        font-size: 30px;
+        box-shadow: 5px 5px 3px black;
+        line-height: 200%;
+        height: 9%;
+        background-color: #ffd091;
+        color: black;
+    }
+
+    .Girlsbuttons {
+        cursor: pointer;
+        position: fixed;
+        font-family: Verdana;
+        font-size: 26px;
+        width: 14%;
+        border: 2px solid black;
+        border-radius: 14px;
+        box-shadow: 5px 5px 3px black;
+        background-color: #ffd091;
+    }
+
+    .Girlsbuttons:hover {
+        cursor: pointer;
+        position: fixed;
+        font-family: Verdana;
+        font-size: 26px;
+        width: 14%;
+        border: 2px solid black;
+        border-radius: 14px;
+        box-shadow: 2px 2px 1px black;
+        background-color: #ffd091;
+    }
+
+    .girlspoints {
+        position: fixed;
+        top: 87%;
+        right: 3%;
+        border: 2px solid black;
+        border-radius: 14px;
+        width: 14%;
+        resize: none;
+        text-align: center;
+        padding-top: 0.5%;
+        font-family: Verdana;
+        font-size: 30px;
+        box-shadow: 5px 5px 3px black;
+        line-height: 200%;
+        height: 9%;
+        background-color: #ffd091;
+        color: black;
+    }
+
+    .boys {
+        top: 2%;
+        font-family: Verdana;
+        font-size: 30px;
+        position: fixed;
+        left: 7.5%;
+        color: white;
+    }
+
+    .girls {
+        top: 2%;
+        font-family: Verdana;
+        font-size: 30px;
+        position: fixed;
+        right: 8%;
+        border: none;
+        color: black;
+    }
+
+    .ResetBoys {
+        position: fixed;
+        top: 12%;
+        left: 6.3%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetBoys:hover {
+        position: fixed;
+        top: 12%;
+        left: 6.3%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .ResetGirls {
+        position: fixed;
+        top: 12%;
+        right: 6.3%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px black;
+        background-color: #ffd091;
+    }
+
+    .ResetGirls:hover {
+        position: fixed;
+        top: 12%;
+        right: 6.3%;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-family: Verdana;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px 0.5px black;
+        background-color: #ffd091;
+    }
+
+    .BONK3 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        animation-name: BONK;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        text-align: center;
+        display: none;
+        animation-timing-function: linear;
+        z-index: 4;
+    }
+
+    @keyframes BONK {
+        0% {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            background-color=red;
+        }
+
+        25% {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            background-color=orange;
+        }
+
+        50% {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            background-color=yellow;
+        }
+
+        75% {
+            height: 100% width: 100%;
+            ;
+            display: inline-block;
+            background-color=green;
+        }
+
+        100% {
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color=blue;
+        }
+    }
+
+    .BONK4 {
+        z-index: 0;
+        font-size: 300px;
+        font-family: Verdana;
+        opacity: 1;
+        position: absolute;
+        color: red;
+        top: -20%;
+        left: 10%;
+        animation-name: BONK2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        animation-timing-function: linear;
+        display: none;
+    }
+
+    @keyframes BONK2 {
+        0% {
+            display: none;
+        }
+
+        10% {
+            display: none;
+        }
+
+        20% {
+            display: none
+        }
+
+        30% {
+            display: none
+        }
+
+        40% {
+            display: inline-block;
+        }
+
+        50% {
+            display: none;
+        }
+
+        60% {
+            display: inline-block;
+        }
+
+        70% {
+            display: none
+        }
+
+        80% {
+            display: none;
+        }
+
+        90% {
+            display: none;
+        }
+
+        100% {
+            display: none;
+        }
+    }
+
+    .SettingsInnerL {
+        position: absolute;
+        width: 20%;
+        height: 10%;
+        top: 45%;
+        left: 20%;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    .SettingsInnerR {
+        position: absolute;
+        width: 20%;
+        height: 10%;
+        top: 45%;
+        left: 60%;
+        cursor: pointer;
+        z-index: 4;
+    }
+</style>
+
+<body onload="checkswitch2()">
+    <div id="startpage" class="startpage">
+        <p id="BONK!start" class="BONK2">Bonk!</p>
+        <button class="startpageB1" onclick="startgame(event)" onmouseover="CheckEasy(event)"
+            onmouseout="IThoughtSo1(event)" id="startpageB1">Easy Mode</button>
+        <button class="startpageB2" onclick="startgame(event)" onmouseover="CheckNormal(event)"
+            onmouseout="IThoughtSo2(event)" id="startpageB2">Normal Mode</button>
+        <button class="startpageB3" onclick="startgame(event)" onmouseover="CheckHard(event)"
+            onmouseout="IThoughtSo3(event)" id="startpageB3">Hard Mode</button>
+    </div>
+    <p id="BONK!" class="BONK">Bonk!</p>
+    <div id="Settings"
+        style="z-index: 4; display: none; background-color: black; width: 100%; height: 100%; position: absolute; top: 0%; left: 0%; opacity: 0.9;">
+        <p style="position: absolute; top: 30%; left: 20%; color: white; font-family: Verdana; font-size: 40px;">Primary
+            Color</p>
+        <input type="color" class="SettingsInnerL" value="#ff0000" id="PrimaryC"></input>
+        <p style="position: absolute; top: 30%; left: 60%; color: white; font-family: Verdana; font-size: 40px;">
+            Secondary Color</p>
+        <input type="color" class="SettingsInnerR" value="#ff0000" id="SecondaryC"></input>
+        <button onclick="SaveColor()" style="position: absolute; top: 55%; height: 10%; left: 45%; width: 10%; font-family: Verdana; font-size: 30px;
+    cursor: pointer; z-index: 4; border-radius: 15px;">Save</button>
+        <button onclick="CloseSettings()" style="position: absolute; top: 70%; height: 10%; left: 45%; width: 10%; font-family: Verdana; font-size: 30px;
+    cursor: pointer; z-index: 4; border-radius: 15px;">Close</button>
+    </div>
+    <button class="BonkStyle" style="top: 2.5%; left: 22.5%;" id="BonkButton1" onclick="RunBonk(event)">1</button>
+    <button class="BonkStyle" style="top: 2.5%; left: 37.5%;" id="BonkButton2" onclick="RunBonk(event)">2</button>
+    <button class="BonkStyle" style="top: 2.5%; left: 52.5%;" id="BonkButton3" onclick="RunBonk(event)">3</button>
+    <button class="BonkStyle" style="top: 2.5%; left: 67.5%;" id="BonkButton4" onclick="RunBonk(event)">4</button>
+    <button class="BonkStyle" style="top: 27.5%; left: 22.5%; " id="BonkButton5" onclick="RunBonk(event)">5</button>
+    <button class="BonkStyle" style="top: 27.5%; left: 37.5%; " id="BonkButton6" onclick="RunBonk(event)">6</button>
+    <button class="BonkStyle" style="top: 27.5%; left: 52.5%; " id="BonkButton7" onclick="RunBonk(event)">7</button>
+    <button class="BonkStyle" style="top: 27.5%; left: 67.5%; " id="BonkButton8" onclick="RunBonk(event)">8</button>
+    <button class="BonkStyle" style="top: 52.5%; left: 22.5%; " id="BonkButton9" onclick="RunBonk(event)">9</button>
+    <button class="BonkStyle" style="top: 52.5%; left: 37.5%; " id="BonkButton10" onclick="RunBonk(event)">10</button>
+    <button class="BonkStyle" style="top: 52.5%; left: 52.5%; " id="BonkButton11" onclick="RunBonk(event)">11</button>
+    <button class="BonkStyle" style="top: 52.5%; left: 67.5%; " id="BonkButton12" onclick="RunBonk(event)">12</button>
+    <button class="BonkStyle" style="top: 77.5%; left: 22.5%; " id="BonkButton13" onclick="RunBonk(event)">13</button>
+    <button class="BonkStyle" style="top: 77.5%; left: 37.5%; " id="BonkButton14" onclick="RunBonk(event)">14</button>
+    <button class="BonkStyle" style="top: 77.5%; left: 52.5%; " id="BonkButton15" onclick="RunBonk(event)">15</button>
+    <button class="BonkStyle" style="top: 77.5%; left: 67.5%; " id="BonkButton16" onclick="RunBonk(event)">16</button>
+    <div id="sidebuttons">
+        <button id="resetBonk" onclick="ResetBonk1()" class="ResetBonk">Reset</button>
+        <button id="switchteams" onclick="SwitchTeams()" class="ResetBonk2">Switch teams</button>
+    </div>
+    <div id="sidebuttonsright">
+        <button id="Switch" onclick="Switch()" class="ResetBonk4">Subtract</button>
+        <button id="SettingsButton" onclick="Settings()" class="ResetBonk3">Settings</button>
+    </div>
+    <div id="boysbuttons">
+        <p id="boys" class="boys">Boys</p>
+        <button id="resetBoys" onclick="ResetBoys1()" class="ResetBoys">Reset boys</button>
+        <button class="Boysbuttons" style="top: 17%; left: 3%; " id="10kb" onclick="Addpointsb(event)">+10k</button>
+        <button class="Boysbuttons" style="top: 24%; left: 3%; " id="20kb" onclick="Addpointsb(event)">+20k</button>
+        <button class="Boysbuttons" style="top: 31%; left: 3%; " id="30kb" onclick="Addpointsb(event)">+30k</button>
+        <button class="Boysbuttons" style="top: 38%; left: 3%; " id="40kb" onclick="Addpointsb(event)">+40k</button>
+        <button class="Boysbuttons" style="top: 45%; left: 3%; " id="50kb" onclick="Addpointsb(event)">+50k</button>
+        <button class="Boysbuttons" style="top: 52%; left: 3%; " id="60kb" onclick="Addpointsb(event)">+60k</button>
+        <button class="Boysbuttons" style="top: 59%; left: 3%; " id="70kb" onclick="Addpointsb(event)">+70k</button>
+        <button class="Boysbuttons" style="top: 66%; left: 3%; " id="80kb" onclick="Addpointsb(event)">+80k</button>
+        <button class="Boysbuttons" style="top: 73%; left: 3%; " id="90kb" onclick="Addpointsb(event)">+90k</button>
+        <button class="Boysbuttons" style="top: 80%; left: 3%; " id="100kb" onclick="Addpointsb(event)">+100k</button>
+        <textarea class="boyspoints" id="boyspoints" disabled>0</textarea>
+    </div>
+    <div id="girlsbuttons">
+        <p id="girls" class="girls">Girls</p>
+        <button id="resetGirls" onclick="ResetGirls1()" class="ResetGirls">Reset girls</button>
+        <button class="Girlsbuttons" style="top: 17%; right: 3%; " id="10kg" onclick="Addpointsg(event)">+10k</button>
+        <button class="Girlsbuttons" style="top: 24%; right: 3%; " id="20kg" onclick="Addpointsg(event)">+20k</button>
+        <button class="Girlsbuttons" style="top: 31%; right: 3%; " id="30kg" onclick="Addpointsg(event)">+30k</button>
+        <button class="Girlsbuttons" style="top: 38%; right: 3%; " id="40kg" onclick="Addpointsg(event)">+40k</button>
+        <button class="Girlsbuttons" style="top: 45%; right: 3%; " id="50kg" onclick="Addpointsg(event)">+50k</button>
+        <button class="Girlsbuttons" style="top: 52%; right: 3%; " id="60kg" onclick="Addpointsg(event)">+60k</button>
+        <button class="Girlsbuttons" style="top: 59%; right: 3%; " id="70kg" onclick="Addpointsg(event)">+70k</button>
+        <button class="Girlsbuttons" style="top: 66%; right: 3%; " id="80kg" onclick="Addpointsg(event)">+80k</button>
+        <button class="Girlsbuttons" style="top: 73%; right: 3%; " id="90kg" onclick="Addpointsg(event)">+90k</button>
+        <button class="Girlsbuttons" style="top: 80%; right: 3%; " id="100kg" onclick="Addpointsg(event)">+100k</button>
+        <textarea class="girlspoints" id="girlspoints" disabled>0</textarea>
+    </div>
+    <div id="BONK3" class="BONK3">
+        <p id="BONK2" class="BONK4">BONK!!</p>
+    </div>
+    <p id="unprofmove1" style="display: none;">0</p>
+    <p id="unprofmove2" style="display: none;">0</p>
+    <p id="mode" style="display: none;">24</p>
+    <p id="modeD" style="display: none;">3</p>
+    <p id="sliderb" style="display: none;">24</p>
+    <p id="slider2b" style="display: none;">3</p>
+    <p id="sliderg" style="display: none;">24</p>
+    <p id="slider2g" style="display: none;">3</p>
+    <p id="sliderLR" style="display: none;">b</p>
+    <p id="switch1b" style="display: none;">0</p>
+    <p id="switch1g" style="display: none;">0</p>
+    <p id="switch2" style="display: none;">0</p>
+    <p id="switch3b" style="display: none;">1</p>
+    <p id="switch3g" style="display: none;">0</p>
+    <p id="Boolean1" style="display: none;">1</p>
+    <p id="currentid" style="display: none;">0</p>
+    <p id="bonkN" style="display: none;">0</p>
+    <p id="PreviousNum" style="display: none;">0</p>
+    <p id="PrevPreviousNum" style="display: none;">0</p>
+    <p id="BoysClicksAvg" style="display: none;">0</p>
+    <p id="GirlsClicksAvg" style="display: none;">0</p>
+    <p id="NumberOfTurns" style="display: none;">0</p>
+    <p id="BoysNumberOfBonks" style="display: none;">0</p>
+    <p id="GirlsNumberOfBonks" style="display: none;">0</p>
+    <p id="BoysNumberOfDoubles" style="display: none;">0</p>
+    <p id="GirlsNumberOfDoubles" style="display: none;">0</p>
+</body>
+<script>
+    function checkswitch2() {
+        startingpage = sessionStorage.getItem("startpage");
+        if (startingpage !== null) {
+            document.getElementById("switch2").innerHTML = startingpage;
+        }
+        switch2 = document.getElementById("switch2").innerHTML;
+        if (switch2 > 0) {
+            document.getElementById("startpage").style.display = "none";
+        }
+        else {
+            document.getElementById("startpage").style.display = "inline-block";
+        }
+        CheckColor();
+    }
+    function startgame(event) {
+        document.getElementById("startpage").style.animationPlayState = "running";
+        setTimeout(endanimation, 1950);
+        document.getElementById("switch2").innerHTML = 1;
+        sessionStorage.setItem("startpage", 1);
+        mode = event.target.innerHTML;
+        switch (mode) {
+            case "Easy Mode":
+                document.getElementById("mode").innerHTML = "34";
+                document.getElementById("modeD").innerHTML = "5";
+                document.getElementById("sliderb").innerHTML = "34";
+                document.getElementById("sliderg").innerHTML = "34";
+                document.getElementById("slider2b").innerHTML = "5";
+                document.getElementById("slider2g").innerHTML = "5";
+                break;
+            case "Normal Mode":
+                document.getElementById("mode").innerHTML = "24";
+                document.getElementById("modeD").innerHTML = "3";
+                document.getElementById("sliderb").innerHTML = "24";
+                document.getElementById("sliderg").innerHTML = "24";
+                document.getElementById("slider2b").innerHTML = "3";
+                document.getElementById("slider2g").innerHTML = "3";
+                break;
+            case "Hard Mode":
+                document.getElementById("mode").innerHTML = "14";
+                document.getElementById("modeD").innerHTML = "2";
+                document.getElementById("sliderb").innerHTML = "14";
+                document.getElementById("sliderg").innerHTML = "14";
+                document.getElementById("slider2b").innerHTML = "2";
+                document.getElementById("slider2g").innerHTML = "2";
+        }
+    }
+    function endanimation() {
+        document.getElementById("startpage").style.animationPlayState = "paused";
+        document.getElementById("startpage").style.display = "none";
+    }
+    function CheckEasy(event) {
+        randomcoin1 = Math.floor(Math.random() * 3) + 1;
+        switch (randomcoin1) {
+            case 1: event.target.innerHTML = "Pretty chill game";
+                break;
+            case 2: event.target.innerHTML = "You can do this";
+                break;
+            case 3: event.target.innerHTML = "Not that bad";
+        }
+    }
+    function CheckNormal(event) {
+        randomcoin2 = Math.floor(Math.random() * 3) + 1;
+        switch (randomcoin2) {
+            case 1: event.target.innerHTML = "A little harder...";
+                break;
+            case 2: event.target.innerHTML = "An average game...";
+                break;
+            case 3: event.target.innerHTML = "Ready for a challenge?";
+        }
+    }
+    function CheckHard(event) {
+        randomcoin3 = Math.floor(Math.random() * 5) + 1;
+        switch (randomcoin3) {
+            case 1: event.target.innerHTML = "Are you sure?";
+                break;
+            case 2: event.target.innerHTML = "Are you ready?";
+                break;
+            case 3: event.target.innerHTML = "It's your funeral...";
+                break;
+            case 4: event.target.innerHTML = "Not afraid, are you?";
+                break;
+            case 5: event.target.innerHTML = "Into the fire... :/";
+        }
+    }
+    function IThoughtSo1(event) {
+        event.target.innerHTML = "Easy Mode";
+    }
+    function IThoughtSo2(event) {
+        event.target.innerHTML = "Normal Mode";
+    }
+    function IThoughtSo3(event) {
+        event.target.innerHTML = "Hard Mode";
+    }
+    function SwitchTeams() {
+        currentT = document.getElementById("sliderLR").innerHTML;
+        document.getElementById("currentid").innerHTML = "switchteams";
+        document.getElementById("switchteams").disabled = true;
+        setTimeout(enable, 250);
+        if (currentT == "g") {
+            document.getElementById("sliderLR").innerHTML = "b";
+            document.getElementById("boys").style.color = "white";
+            document.getElementById("girls").style.color = "black";
+            document.getElementById("switch3b").innerHTML = "1";
+        }
+        else if (currentT == "b") {
+            document.getElementById("sliderLR").innerHTML = "g";
+            document.getElementById("boys").style.color = "black";
+            document.getElementById("girls").style.color = "white";
+            document.getElementById("switch3g").innerHTML = "1";
+        }
+    }
+    function RunBonk(event) {
+        buttonid = event.target.id;
+        previousNum = document.getElementById("PreviousNum").innerHTML;
+        prevpreviousNum = document.getElementById("PrevPreviousNum").innerHTML;
+        bonkNumber = buttonid.replace(/\D/g, "");
+        document.getElementById("PreviousNum").innerHTML = bonkNumber;
+        document.getElementById("PrevPreviousNum").innerHTML = previousNum;
+        team = document.getElementById("sliderLR").innerHTML;
+        teamid = "slider" + team;
+        teamid2 = "switch1" + team;
+        teamid3 = "slider2" + team;
+        teamid4 = "switch3" + team;
+        level = document.getElementById("mode").innerHTML;
+        levelN = Number(level);
+        levelD = document.getElementById("modeD").innerHTML;
+        levelND = Number(levelD);
+        RandomN = Math.floor(Math.random() * levelN);
+        sliderVar = document.getElementById(teamid).innerHTML;
+        sliderVarN = Number(sliderVar);
+        firstGuess = document.getElementById(teamid4).innerHTML;
+        switch (firstGuess) {
+            case "0":
+                sliderValue = sliderVarN;
+                break;
+            case "1":
+                sliderValue = sliderVarN * 3;
+                document.getElementById(teamid4).innerHTML = "0";
+        }
+        RandomNN = Number(RandomN);
+        RandomNN1 = RandomNN + 1;
+        RandomNN2 = RandomNN1 * 10;
+        if (RandomNN1 <= sliderValue) {
+            RandomNextra = Math.floor(Math.random() * 10) + 1;
+            RandomNextra2 = RandomNextra * 10;
+            value = RandomNextra2 + "k";
+            document.getElementById(buttonid).innerHTML = value;
+            boolean1 = document.getElementById(teamid2).innerHTML;
+            if (boolean1 == "0") {
+                document.getElementById(teamid2).innerHTML = 1;
+            }
+            if (boolean1 == "1") {
+                if (sliderVarN - 1 > 0) {
+                    document.getElementById(teamid).innerHTML = sliderVarN - 1;
+                } else {
+                    document.getElementById(teamid).innerHTML = 1;
+                }
+                document.getElementById(teamid2).innerHTML = 0;
+            }
+        }
+        if (RandomNN1 > sliderValue) {
+            RandomN2 = Math.floor(Math.random() * 5) + 1;
+            sliderVar2 = document.getElementById(teamid3).innerHTML;
+            sliderVar2N = Number(sliderVar2);
+            if (RandomN2 <= sliderVar2N) {
+                document.getElementById(buttonid).innerHTML = "Double!";
+                if (sliderVarN - 1 > 0) {
+                    document.getElementById(teamid).innerHTML = sliderVarN - 1;
+                } else {
+                    document.getElementById(teamid).innerHTML = 1;
+                }
+                if (sliderVar2N - 1 > 0) {
+                    document.getElementById(teamid3).innerHTML = sliderVar2N - 1;
+                } else {
+                    document.getElementById(teamid3).innerHTML = 1;
+                }
+            }
+            if (RandomN2 > sliderVar2N) {
+                numberBonks = document.getElementById("bonkN").innerHTML;
+                numberBonksN = Number(numberBonks);
+                document.getElementById("BONK3").style.animationPlayState = "running";
+                document.getElementById("BONK3").style.display = "inline-block";
+                setTimeout(Pause, 3000);
+                document.getElementById("BONK2").style.animationPlayState = "running";
+                document.getElementById("BONK2").style.display = "inline-block";
+                setTimeout(Pause2, 3000);
+                document.getElementById(buttonid).innerHTML = "Bonk!";
+                document.getElementById(teamid).innerHTML = levelN;
+                document.getElementById(teamid3).innerHTML = levelND;
+            }
+        }
+        document.getElementById(buttonid).disabled = true;
+        document.getElementById(buttonid).style.color = "black";
+        x = 0;
+        if (x == 1) {
+            if (previousNum == 6) {
+                if (bonkNumber == 7) {
+                    numberBonks = document.getElementById("bonkN").innerHTML;
+                    numberBonksN = Number(numberBonks);
+                    document.getElementById("BONK3").style.animationPlayState = "running";
+                    document.getElementById("BONK3").style.display = "inline-block";
+                    setTimeout(Pause, 3000);
+                    document.getElementById("BONK2").style.animationPlayState = "running";
+                    document.getElementById("BONK2").style.display = "inline-block";
+                    setTimeout(Pause2, 3000);
+                    document.getElementById(buttonid).innerHTML = "Bonk!";
+                    newId = "BonkButton" + previousNum;
+                    document.getElementById(newId).innerHTML = "Bonk!";
+                    document.getElementById(teamid).innerHTML = levelN;
+                    document.getElementById(teamid3).innerHTML = levelND;
+                }
+            }
+        }
+    }
+    function ResetBonk1() {
+        for (i = 1; i < 17; i++) {
+            bonkid = "BonkButton" + i;
+            document.getElementById(bonkid).innerHTML = i;
+            document.getElementById(bonkid).disabled = false;
+        }
+    }
+    function Addpointsb(event) {
+        event.target.disabled = true;
+        setTimeout(enable, 250);
+        buttonidB = event.target.id;
+        document.getElementById("currentid").innerHTML = buttonidB;
+        BoysR = buttonidB.replace("kb", "000");
+        BoysRN = Number(BoysR);
+        BoysP = document.getElementById("boyspoints").value;
+        BoysPR = BoysP.replace(/,/g, "");
+        BoysPtN = Number(BoysPR);
+        BoysTotal = BoysPtN + BoysRN;
+        BoysTotalS = BoysTotal.toString();
+        document.getElementById("unprofmove1").innerHTML = BoysTotalS;
+        BoysLength = BoysTotalS.length;
+        BoysLengthN = Number(BoysLength);
+        BoysLengthN2 = Number(BoysLength) - 1;
+        TestB = BoysLengthN2 / 3;
+        TestBRD = Math.floor(TestB);
+        for (let i = 1; i <= TestBRD; i++) {
+            testvalue1 = document.getElementById("unprofmove1").innerHTML;
+            itimes3 = (i * 3);
+            lengthB = BoysLengthN - itimes3;
+            boysLengthReplace = testvalue1.search("-,")
+            if (boysLengthReplace !== null) {
+                testvalue4 = testvalue1.replace("-,", "-");
+                BoysSub1 = testvalue1.substring(0, lengthB);
+                BoysSub = testvalue1.substring(lengthB);
+                if (BoysSub1 !== "-") {
+                    BoysR2 = testvalue4.substring(boysLengthReplace, lengthB) + "," + testvalue4.substring(lengthB, testvalue4.length);
+                } else {
+                    BoysR2 = "-" + testvalue4.substring(lengthB, testvalue4.length);
+                }
+            } else {
+                BoysSub1 = testvalue1.substring(0, lengthB);
+                BoysSub = testvalue1.substring(lengthB);
+                BoysR2 = BoysSub1 + "," + BoysSub;
+            }
+            document.getElementById("unprofmove1").innerHTML = BoysR2;
+        }
+        if (BoysTotal == 0) {
+            BoysR2 = 0;
+        }
+        document.getElementById("boyspoints").value = BoysR2;
+    }
+    function Addpointsg(event) {
+        event.target.disabled = true;
+        setTimeout(enable, 250);
+        buttonidG = event.target.id;
+        document.getElementById("currentid").innerHTML = buttonidG;
+        GirlsR = buttonidG.replace("kg", "000");
+        GirlsRN = Number(GirlsR);
+        GirlsP = document.getElementById("girlspoints").value;
+        GirlsPR = GirlsP.replace(/,/g, "");
+        GirlsPtN = Number(GirlsPR);
+        GirlsTotal = GirlsPtN + GirlsRN;
+        GirlsTotalS = GirlsTotal.toString();
+        document.getElementById("unprofmove2").innerHTML = GirlsTotalS;
+        GirlsLength = GirlsTotalS.length;
+        GirlsLengthN = Number(GirlsLength);
+        GirlsLengthN2 = Number(GirlsLength) - 1;
+        TestG = GirlsLengthN2 / 3;
+        TestGRD = Math.floor(TestG);
+        for (let j = 1; j <= TestGRD; j++) {
+            testvalue2 = document.getElementById("unprofmove2").innerHTML;
+            jtimes3 = (j * 3);
+            lengthG = GirlsLengthN - jtimes3;
+            GirlsLengthReplace = testvalue2.search("-,")
+            if (GirlsLengthReplace !== null) {
+                testvalue3 = testvalue2.replace("-,", "-");
+                GirlsSub1 = testvalue3.substring(GirlsLengthReplace, lengthG);
+                GirlsSub = testvalue3.substring(lengthG);
+                if (GirlsSub1 !== "-") {
+                    GirlsR2 = testvalue3.substring(GirlsLengthReplace, lengthG) + "," + testvalue3.substring(lengthG, testvalue3.length);
+                } else {
+                    GirlsR2 = "-" + testvalue3.substring(lengthG, testvalue3.length);
+                }
+            } else {
+                GirlsSub1 = testvalue2.substring(0, lengthG);
+                GirlsSub = testvalue2.substring(lengthG);
+                GirlsR2 = GirlsSub1 + "," + GirlsSub;
+            }
+            document.getElementById("unprofmove2").innerHTML = GirlsR2;
+        }
+        if (GirlsTotal == 0) {
+            GirlsR2 = 0;
+        }
+        document.getElementById("girlspoints").value = GirlsR2;
+    }
+    function ResetBoys1() {
+        document.getElementById("boyspoints").value = 0;
+    }
+    function ResetGirls1() {
+        document.getElementById("girlspoints").value = 0;
+    }
+    function Switch() {
+        document.getElementById("currentid").innerHTML = "Switch";
+        document.getElementById("Switch").disabled = true;
+        setTimeout(enable, 250);
+        current1 = document.getElementById("Boolean1").innerHTML;
+        current1N = Number(current1);
+        document.getElementById("Boolean1").innerHTML = current1N * -1;
+        for (i = 1; i < 11; i++) {
+            newi = i * current1N;
+            id1 = String(newi) + "0kb";
+            add = document.getElementById(id1).innerHTML;
+            addSu = add.substring(0, add.length - 1);
+            addSuN = Number(addSu);
+            addSuN2 = addSuN * -1;
+            if (addSuN2 < 0) {
+                addSuN2S = addSuN2.toString();
+            }
+            if (addSuN2 > 0) {
+                addSuN2S = "+" + addSuN2.toString();
+            }
+            final1 = addSuN2S + "k";
+            document.getElementById(id1).innerHTML = final1;
+            document.getElementById(id1).id = -1 * Number(newi) + "0kb";
+        }
+        for (j = 1; j < 11; j++) {
+            newi = j * current1N;
+            id1 = String(newi) + "0kg";
+            add = document.getElementById(id1).innerHTML;
+            addSu = add.substring(0, add.length - 1);
+            addSuN = Number(addSu);
+            addSuN2 = addSuN * -1;
+            if (addSuN2 < 0) {
+                addSuN2S = addSuN2.toString();
+            }
+            if (addSuN2 > 0) {
+                addSuN2S = "+" + addSuN2.toString();
+            }
+            final1 = addSuN2S + "k";
+            document.getElementById(id1).innerHTML = final1;
+            document.getElementById(id1).id = -1 * Number(newi) + "0kg";
+        }
+    }
+    function enable() {
+        currentid = document.getElementById("currentid").innerHTML;
+        document.getElementById(currentid).disabled = false;
+    }
+    function Pause() {
+        document.getElementById("BONK3").style.animationPlayState = "paused";
+        document.getElementById("BONK3").style.display = "none";
+    }
+    function Pause2() {
+        document.getElementById("BONK2").style.animationPlayState = "paused";
+        document.getElementById("BONK2").style.display = "none";
+    }
+    function Settings() {
+        document.getElementById("Settings").style.display = "inline-block";
+    }
+    function CloseSettings() {
+        document.getElementById("Settings").style.display = "none";
+    }
+    function SaveColor() {
+        PColor = document.getElementById("PrimaryC").value;
+        SColor = document.getElementById("SecondaryC").value;
+        localStorage.setItem("PColor", PColor);
+        localStorage.setItem("SColor", SColor);
+        document.getElementById("startpageB1").style.backgroundColor = PColor;
+        document.getElementById("startpageB2").style.backgroundColor = PColor;
+        document.getElementById("startpageB3").style.backgroundColor = PColor;
+        for (i = 1; i <= 16; i++) {
+            id = "BonkButton" + i;
+            document.getElementById(id).style.backgroundColor = PColor;
+        }
+        for (i = 1; i <= 10; i++) {
+            idG = i + "0kg";
+            idB = i + "0kb";
+            document.getElementById(idG).style.backgroundColor = PColor;
+            document.getElementById(idB).style.backgroundColor = PColor;
+        }
+        document.getElementById("resetGirls").style.backgroundColor = PColor;
+        document.getElementById("resetBoys").style.backgroundColor = PColor;
+        document.getElementById("SettingsButton").style.backgroundColor = PColor;
+        document.getElementById("Switch").style.backgroundColor = PColor;
+        document.getElementById("switchteams").style.backgroundColor = PColor;
+        document.getElementById("resetBonk").style.backgroundColor = PColor;
+        document.getElementById("boyspoints").style.backgroundColor = PColor;
+        document.getElementById("girlspoints").style.backgroundColor = PColor;
+        document.getElementById("html").style.backgroundColor = SColor;
+    }
+
+    function CheckColor() {
+        PColor = localStorage.getItem("PColor");
+        if (PColor !== null) {
+            SColor = localStorage.getItem("SColor");
+            document.getElementById("startpageB1").style.backgroundColor = PColor;
+            document.getElementById("startpageB2").style.backgroundColor = PColor;
+            document.getElementById("startpageB3").style.backgroundColor = PColor;
+            for (i = 1; i <= 16; i++) {
+                id = "BonkButton" + i;
+                document.getElementById(id).style.backgroundColor = PColor;
+            }
+            for (i = 1; i <= 10; i++) {
+                idG = i + "0kg";
+                idB = i + "0kb";
+                document.getElementById(idG).style.backgroundColor = PColor;
+                document.getElementById(idB).style.backgroundColor = PColor;
+            }
+            document.getElementById("resetGirls").style.backgroundColor = PColor;
+            document.getElementById("resetBoys").style.backgroundColor = PColor;
+            document.getElementById("SettingsButton").style.backgroundColor = PColor;
+            document.getElementById("Switch").style.backgroundColor = PColor;
+            document.getElementById("switchteams").style.backgroundColor = PColor;
+            document.getElementById("resetBonk").style.backgroundColor = PColor;
+            document.getElementById("boyspoints").style.backgroundColor = PColor;
+            document.getElementById("girlspoints").style.backgroundColor = PColor;
+            document.getElementById("html").style.backgroundColor = SColor;
+        } else {
+        }
+    }
+    function PlayGameAuto() {
+            BoysNumBonksFull = new Array();
+            GirlsNumBonksFull = new Array();
+            BoysNumDoublesFull = new Array();
+            GirlsNumDoublesFull = new Array();
+            BoysClicksPerTurnFull = new Array();
+            GirlsClicksPerTurnFull = new Array();
+            BoysScore = new Array();
+            GirlsScore = new Array();
+        for (h = 1; h <= 5000; h++) {
+            // Game has started, first question has been asked.  We will have 10 rounds, up to three clicks per round, points awarded automatically.  The data will be automatically recorded for reference.
+            // Create arrays for each piece of data
+            BoysNumBonks = new Array();
+            GirlsNumBonks = new Array();
+            BoysNumDoubles = new Array();
+            GirlsNumDoubles = new Array();
+            BoysClicksPerTurn = new Array();
+            GirlsClicksPerTurn = new Array();
+            Bonk = 0;
+            for (d = 1; d <= 20; d++) {
+                Turns = d / 2;
+                if (Math.floor(d / 2) !== d / 2) {
+                    Team = "girls";
+                    choice = Math.floor(Math.random() * 4) + 1;
+                    for (j = 1; j < choice; j++) {
+                        if (Bonk < 1) {
+                            number = Math.floor(Math.random() * 16) + 1;
+                            Bbutton = "BonkButton" + String(number);
+                            document.getElementById(Bbutton).click();
+                            document.getElementById(Bbutton).disabled = false;
+                            result = document.getElementById(Bbutton).innerHTML;
+                            resultS = result.replace("k", "");
+                            resultN = Number(resultS);
+                            if (Number.isFinite(resultN) == true) {
+                                button = String(resultN) + "kg";
+                                document.getElementById(button).click();
+                                document.getElementById(button).disabled = false;
+                            } else {
+                                if (result == 'Bonk!') {
+                                    ResetBonk1();
+                                    SwitchTeams();
+                                    FinalScoreMult = 0;
+                                    GirlsBonks = GirlsNumBonks.length;
+                                    GirlsNumBonks[GirlsBonks] = 1;
+                                    Bonk = 1;
+                                }
+                                if (result == 'Double!') {
+                                    FinalScoreMult = 2;
+                                    number2 = document.getElementById("PreviousNum").innerHTML;
+                                    if (number2 > 0) {
+                                        Bbutton2 = "BonkButton" + String(number2);
+                                        result2 = document.getElementById(Bbutton2).innerHTML;
+                                        if (result2 !== 'Double!') {
+                                            result2S = result2.replace("k", "");
+                                            result2N = Number(result2S);
+                                            button = String(result2N) + "kg";
+                                            document.getElementById(button).click();
+                                            document.getElementById(button).disabled = false;
+                                            GirlsDoubles = GirlsNumDoubles.length;
+                                            GirlsNumDoubles[GirlsDoubles] = 1;
+                                        } else {
+                                            number3 = document.getElementById("PrevPreviousNum").innerHTML;
+                                            if (number3 > 0) {
+                                                Bbutton3 = "BonkButton" + String(number3);
+                                                result3 = document.getElementById(Bbutton3).innerHTML;
+                                                if (result3 !== 'Double!') {
+                                                    result3S = result3.replace("k", "");
+                                                    result3N = Number(result3S);
+                                                    button = String(result3N) + "kg";
+                                                    document.getElementById(button).click();
+                                                    document.getElementById(button).disabled = false;
+                                                    document.getElementById(button).click();
+                                                    document.getElementById(button).disabled = false;
+                                                    GirlsDoubles = GirlsNumDoubles.length;
+                                                    GirlsNumDoubles[GirlsDoubles] = 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Bonk = 0;
+                    GirlsClicksTurn = GirlsClicksPerTurn.length;
+                    GirlsClicksPerTurn[GirlsClicksTurn] = choice;
+                    ResetBonk1();
+                    SwitchTeams();
+                    document.getElementById("PreviousNum").innerHTML = 0;
+                    document.getElementById("PrevPreviousNum").innerHTML = 0;
+                } else {
+                    Team = "boys";
+                    choice = Math.floor(Math.random() * 4) + 1;
+                    for (j = 1; j < choice; j++) {
+                        if (Bonk < 1) {
+                            number = Math.floor(Math.random() * 16) + 1;
+                            Bbutton = "BonkButton" + String(number);
+                            document.getElementById(Bbutton).click();
+                            document.getElementById(Bbutton).disabled = false;
+                            result = document.getElementById(Bbutton).innerHTML;
+                            resultS = result.replace("k", "");
+                            resultN = Number(resultS);
+                            if (Number.isFinite(resultN) == true) {
+                                button = String(resultN) + "kb";
+                                document.getElementById(button).click();
+                                document.getElementById(button).disabled = false;
+                            } else {
+                                if (result == 'Bonk!') {
+                                    ResetBonk1();
+                                    SwitchTeams();
+                                    FinalScoreMult = 0;
+                                    BoysBonks = BoysNumBonks.length;
+                                    BoysNumBonks[BoysBonks] = 1;
+                                    Bonk = 1;
+                                }
+                                if (result == 'Double!') {
+                                    FinalScoreMult = 2;
+                                    number2 = document.getElementById("PreviousNum").innerHTML;
+                                    if (number2 > 0) {
+                                        Bbutton2 = "BonkButton" + String(number2);
+                                        result2 = document.getElementById(Bbutton2).innerHTML;
+                                        if (result2 !== 'Double!') {
+                                            result2S = result2.replace("k", "");
+                                            result2N = Number(result2S);
+                                            button = String(result2N) + "kb";
+                                            document.getElementById(button).click();
+                                            document.getElementById(button).disabled = false;
+                                            BoysDoubles = BoysNumDoubles.length;
+                                            BoysNumDoubles[BoysDoubles] = 1;
+                                        } else {
+                                            number3 = document.getElementById("PrevPreviousNum").innerHTML;
+                                            if (number3 > 0) {
+                                                Bbutton3 = "BonkButton" + String(number3);
+                                                result3 = document.getElementById(Bbutton3).innerHTML;
+                                                if (result3 !== 'Double!') {
+                                                    result3S = result3.replace("k", "");
+                                                    result3N = Number(result3S);
+                                                    button = String(result3N) + "kb";
+                                                    document.getElementById(button).click();
+                                                    document.getElementById(button).disabled = false;
+                                                    document.getElementById(button).click();
+                                                    document.getElementById(button).disabled = false;
+                                                    BoysDoubles = BoysNumDoubles.length;
+                                                    BoysNumDoubles[BoysDoubles] = 1;
+                                                    count = d;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Bonk = 0;
+                    BoysClicksTurn = BoysClicksPerTurn.length;
+                    BoysClicksPerTurn[BoysClicksTurn] = choice;
+                    ResetBonk1();
+                    SwitchTeams();
+                    document.getElementById("PreviousNum").innerHTML = 0;
+                    document.getElementById("PrevPreviousNum").innerHTML = 0;
+                }
+            }
+            BoysNumBonksFull[h] = BoysNumBonks.length;
+            GirlsNumBonksFull[h] = GirlsNumBonks.length;
+            BoysNumDoublesFull[h] = BoysNumDoubles.length;
+            GirlsNumDoublesFull[h] = GirlsNumDoubles.length;
+            totalB = 0;
+            totalG = 0;
+            for (l = 1; l < BoysClicksPerTurn.length; l++) {
+                totalB += BoysClicksPerTurn[l];
+            }
+            for (l = 1; l < GirlsClicksPerTurn.length; l++) {
+                totalG += GirlsClicksPerTurn[l];
+            }
+            AvgB = totalB / (BoysClicksPerTurn.length);
+            AvgG = totalG / (GirlsClicksPerTurn.length);
+            BoysClicksPerTurnFull[h] = AvgB;
+            GirlsClicksPerTurnFull[h] = AvgG;
+            AvgB = 0;
+            AvgG = 0;
+            totalB = 0;
+            totalG = 0;
+            BoysScore[h] = document.getElementById("boyspoints").value;
+            GirlsScore[h] = document.getElementById("girlspoints").value;
+            document.getElementById("boyspoints").value = 0;
+            document.getElementById("girlspoints").value = 0;
+        }
+    }
+</script>
+
+</html>
